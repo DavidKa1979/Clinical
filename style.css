@@ -2,7 +2,19 @@
 
 body {
   font-family: sans-serif;
-  text-align: center;
+  text-align: right;
+  direction: rtl;
+}
+
+.login {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card.recipe > img {
+  height: 300px;
+  object-fit: cover;
 }
 
 .scene {
