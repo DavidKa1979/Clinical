@@ -17,6 +17,42 @@ body {
   object-fit: cover;
 }
 
+.bg-cover {
+  background-image: url('http://www.peponigruppe.com/wp-content/uploads/2014/08/shutterstock_92228908-compressed-825x340.jpg');
+ /* Full height */
+ height: 100%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* Styles for wrapping the search box */
+
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
 .scene {
   border: 1px solid #CCC;
   margin: 40px 0;

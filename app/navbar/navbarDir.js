@@ -1,5 +1,5 @@
 
-app.directive("recipeNavbar", function() {
+app.directive("medicalNavbar", function() {
 
     return {
         templateUrl: "app/navbar/navbar.html",
