@@ -1,5 +1,5 @@
 
-var app= angular.module("clinicalApp", ["ngRoute"]);
+var app= angular.module("clinicalApp", ["ngRoute", "ngImageInputWithPreview", "ngAnimate", "ngTouch", "ui.bootstrap"]);
 
 app.config(function($routeProvider) {
     $routeProvider
