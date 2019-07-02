@@ -26,13 +26,13 @@ app.factory("recipeSrv", function($q) {
         query.equalTo("userId", Parse.User.current());
 
         // Executing the query
-        query.find().then((results) => {
+        query.find().then(function (results) {
           console.log('Recipe found', results);
           for (let index = 0; index < results.length; index++) {
               recipes.push(new Recipe(results[index]));
           }
           async.resolve(recipes);
-        }, (error) => {
+        }, function (error) {
           console.error('Error while fetching Recipe', error);
           async.reject(error);
         });
