@@ -115,3 +115,8 @@ body {
   z-index: 2;
   background: hsla(0, 0%, 100%, 0.8);
 }
+
+
+.imgmedice {
+  width: 230px;
+}

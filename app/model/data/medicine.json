@@ -28,24 +28,24 @@
         "moreinfo": "https://www.beok.co.il/drugs/3692/"
     },
     {
-        "mname": "דנטין תמיסה",
-        "mename": "STREPSILS WITH HONEY AND LEMON",
-        "sactive": "DICHLOROBENZYL, ALCOHOL, AMYLMETACRESOL",
-        "mimg": "http://data.health.gov.il/drugs/arizot/STREPSILS_WITH_HONEY_AND_LEMON(24)049-56-24205-00_1457881222228.jpg",
-        "moreinfo": "https://data.health.gov.il/drugs/index.html#/medDetails"
+        "mname": "אקמול",
+        "mename": "ACAMOL",
+        "sactive": "PARACETAMOL",
+        "mimg": "http://data.health.gov.il/drugs/arizot/Acamol_Caplet7290000803234_1462274040614.jpg",
+        "moreinfo": "https://www.beok.co.il/drugs/18/"
     },
     {
-        "mname": "סטרפסילס בטעם דבש ולימון",
-        "mename": "STREPSILS WITH HONEY AND LEMON",
-        "sactive": "DICHLOROBENZYL, ALCOHOL, AMYLMETACRESOL",
-        "mimg": "http://data.health.gov.il/drugs/arizot/STREPSILS_WITH_HONEY_AND_LEMON(24)049-56-24205-00_1457881222228.jpg",
-        "moreinfo": "https://data.health.gov.il/drugs/index.html#/medDetails"
+        "mname": "וולטרן אמולג'ל פורטה % 2",
+        "mename": "VOLTAREN EMULGEL FORTE 2%",
+        "sactive": "DICLOFENAC SODIUM",
+        "mimg": "http://data.health.gov.il/drugs/arizot/Voltaren_Emulgel_Forte_2.32_7290105040725_1460361519867.jpg",
+        "moreinfo": "https://www.beok.co.il/drugs/2474/"
     },
     {
-        "mname": "סטרפסילס בטעם דבש ולימון",
-        "mename": "STREPSILS WITH HONEY AND LEMON",
-        "sactive": "DICHLOROBENZYL, ALCOHOL, AMYLMETACRESOL",
-        "mimg": "http://data.health.gov.il/drugs/arizot/STREPSILS_WITH_HONEY_AND_LEMON(24)049-56-24205-00_1457881222228.jpg",
-        "moreinfo": "https://data.health.gov.il/drugs/index.html#/medDetails"
+        "mname": "נורמלקס",
+        "mename": "NORMALAX",
+        "sactive": "POLYETHYLENE GLYCOL ",
+        "mimg": "http://data.health.gov.il/drugs/arizot/Normalax_7290012066191_1458566993191.jpg",
+        "moreinfo": "https://www.beok.co.il/drugs/3573/"
     }
 ]
