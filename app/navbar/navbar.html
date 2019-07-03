@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-md navbar-light sticky-top bg-trans nav nav-tabs" role="tablist">
     <a class="navbar-brand" href="#">Medical</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -13,6 +13,9 @@
                 <a class="nav-link" href="#" ng-hide="isLoggedIn()">דיאגנוסטיפול</a>
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="#!medicine" ng-hide="isLoggedIn()">חיפוש תרופות</a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="#" ng-hide="isLoggedIn()">אנשי קשר</a>
             </li>
             <li class="nav-item active">
@@ -21,16 +24,16 @@
         </ul>
         <!-- ml auto is moving the items to the right -->
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" ng-hide="isLoggedIn()">הרשמה</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/login" ng-hide="isLoggedIn()">כניסה</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" ng-show="isLoggedIn()" ng-click="logout()">יציאה</a>
-                </li>
-        </ul>            
+            <li class="nav-item">
+                <a class="nav-link" href="#" ng-hide="isLoggedIn()">הרשמה</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!/login" ng-hide="isLoggedIn()">כניסה</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" ng-show="isLoggedIn()" ng-click="logout()">יציאה</a>
+            </li>
+        </ul>
 
     </div>
 </nav>

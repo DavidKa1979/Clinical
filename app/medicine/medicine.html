@@ -1,6 +1,15 @@
+<medical-navbar></medical-navbar>
 <div class="container pt-4">
     <h1 class="text-center">medicines</h1>
-    <div class="my-4" ng-model="Medicine" ng-repeat="medicine in medicines">
+    <div class="row justify-content-center">
+            <div class="form-group has-search text-justify text-left">
+                <div class="d-flex justify-content-end">
+                    <span class="fas fa-search form-control-feedback"></span>
+                </div>
+                <input href="#!medicine" ng-model="query" type="text" class="form-control" placeholder="חיפוש תרופה">
+            </div>
+        </div>
+    <div class="my-4" ng-model="Medicine" ng-repeat="medicine in medicines | filter : filterMed">
         <div class="row media border border-dark card-body2">
             <div class="col-md-4 mr-3">
                 <div>

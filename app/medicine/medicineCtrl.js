@@ -9,9 +9,9 @@ this.mimg = (mimg);
 this.moreinfo = moreinfo;
 };
 
-Medicine.prototype.fulmename = function() {
-var fulmename = this.mname + " " + this.mename;
-return fulmename;
+Medicine.prototype.fullname = function() {
+var fullname = this.mname + " " + this.mename;
+return fullname;
 };
 
 // Load 6 medicine
@@ -36,15 +36,15 @@ var medicine = new Medicine("Chris", "Hemsworth", "https://m.media-amazon.com/sa
 $scope.medicines.push(medicine);
 }
 
-$scope.searchMedicine = "";
+$scope.query = "";
 $scope.filterMed = function(medicine) {
 // If the user didn't insert a filter string then show this medicine
 // if (!$scope.query) {
 //   return true;
 // } else 
   // Reaching here means that the user entered a filter text
-  if (medicine.mname.toLowerCase().includes($scope.searchMedicine.toLowerCase()) || 
-  medicine.mename.toLowerCase().includes($scope.searchMedicine.toLowerCase())) {
+  if (medicine.mname.toLowerCase().includes($scope.query.toLowerCase()) || 
+  medicine.mename.toLowerCase().includes($scope.query.toLowerCase())) {
 return true;
 } else {
 return false;
