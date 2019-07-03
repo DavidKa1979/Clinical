@@ -1,6 +1,24 @@
 <div class="container pt-4">
-        <h1 class="text-center text-light h1">medicines</h1>
+        <h1 class="text-center text-light">medicines</h1>
         <div class="my-4" ng-repeat="medicine in medicines">
-          <my-medicine></my-medicine>
-      </div>
-      </div>
+                <div class="row media border border-dark rounded-pill card-body2">
+                        <div class="col-md-4 mr-3">
+                            <div>
+                                <img class="shadow p-1 mb-5 bg-white" ng-click="openMovieDetails(movie)" ng-src="{{medicine.mimg}}">
+                            </div>
+                            <h6>Medicine</h6>
+                            <a>{{medicine.moreinfo}}</a>
+                        </div>
+                        <div class="col-md-8 ml-5 media-body justify-content-between reverse">
+                            <div class=" mb-5">
+                                <a href="{{medicine.moreinfo}}" target="_blank">
+                                    <h4 class="mt-0 text-info">{{medicine.mname}}</h4>
+                                    <h6>{{medicine.mename}}</h6>
+                                </a>
+                                <h5>Medicine Active</h5>
+                                <p> {{medicine.sactive}} </p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>

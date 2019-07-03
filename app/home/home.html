@@ -8,16 +8,12 @@
                 <div class="d-flex justify-content-end">
                     <span class="fas fa-search form-control-feedback"></span>
                 </div>
-                <input ng-model = "searchMedicine" type="text" class="form-control" placeholder="חיפוש תרופה">
+                <input ng-model="searchMedicine" type="text" class="form-control" placeholder="חיפוש תרופה">
             </div>
         </div>
     </div>
     <medical-navbar></medical-navbar>
-    <medical-articles></medical-articles>
-
-    <div class="row mt-4">
-
-
-    </div>
-  
+    <medical-medicine></medical-medicine> <!-- ng-hide="!searchMedicine" -->
+    <medical-articles ng-hide="searchMedicine"></medical-articles>
 </div>
+
