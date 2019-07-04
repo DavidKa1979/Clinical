@@ -9,7 +9,7 @@
                 <input href="#!medicine" ng-model="query" type="text" class="form-control" placeholder="חיפוש תרופה">
             </div>
         </div>
-    <div class="my-4" ng-model="Medicine" ng-repeat="medicine in medicines | filter : filterMed">
+    <div class="my-4" ng-show="query" ng-model="Medicine" ng-repeat="medicine in medicines | filter : filterMed">
         <div class="row media border border-dark card-body2">
             <div class="col-md-4 mr-3">
                 <div>
