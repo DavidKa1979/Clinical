@@ -2,10 +2,21 @@
     <div class="jumbotron bg-cover mb-0 ">
         <h1 class="display-3 text-center">פורטל רפואי</h1>
         <p class="lead text-center">Master Your Health.</p>
+        <div class="row justify-content-center">
+            <div class="form-group has-search text-justify text-left">
+                <!-- <div class="d-flex justify-content-end">
+                    <button ng-click="filterMed()"></button>
+                </div> -->
+                <form class="form-inline">
+                <input href="#!medicine" ng-model="$root.query"  type="text" class="form-control" placeholder="חיפוש תרופה">
+                    <button class="btn btn-success" ng-click="filterMed()" type="submit"><i  class="fas fa-search"></i></button>
+                  </form>
+            </div>
+        </div>
         <hr class="my-2">
     </div>
     <medical-navbar></medical-navbar>
-    <medical-articles></medical-articles>
-
+    <medical-articles ng-hide="$root.query"></medical-articles>
+    <medical-medicine ng-show="$root.query"></medical-medicine>
 </div>
 

@@ -3,7 +3,8 @@ var app = angular.module("clinicalApp", ["ngRoute", "ngImageInputWithPreview", "
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "app/home/home.html"
+            templateUrl: "app/home/home.html",
+            controller: "homeCtrl"
         }).when("/login", {
             templateUrl: "app/login/login.html",
             controller: "loginCtrl"

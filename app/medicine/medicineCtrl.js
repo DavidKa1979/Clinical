@@ -1,4 +1,4 @@
-app.controller("medicineCtrl", function($scope, $http){
+app.controller("medicineCtrl", function($scope, $http, $rootScope){
 
   //**** Business Logic - this will eventually move to service ****
 function Medicine(mname, mename, sactive, mimg, moreinfo) {
@@ -36,15 +36,22 @@ var medicine = new Medicine("Chris", "Hemsworth", "https://m.media-amazon.com/sa
 $scope.medicines.push(medicine);
 }
 
-$scope.query = "";
+
+$scope.query = $rootScope.query;
 $scope.filterMed = function(medicine) {
 // If the user didn't insert a filter string then show this medicine
 // if (!$scope.query) {
 //   return true;
 // } else 
   // Reaching here means that the user entered a filter text
-  if (medicine.mname.toLowerCase().includes($scope.query.toLowerCase()) || 
-  medicine.mename.toLowerCase().includes($scope.query.toLowerCase())) {
+  if (!$scope.query) {
+    return true;
+  }
+
+
+  if (medicine &&
+    (medicine.mname.toLowerCase().includes($scope.query.toLowerCase()) || 
+    medicine.mename.toLowerCase().includes($scope.query.toLowerCase()))) {
 return true;
 } else {
 return false;
@@ -70,6 +77,7 @@ return false;
 
 
 // }
+
 $scope.activeCard=null;
 $scope.clickCard = function(medicine) {
 if ($scope.activeCard === medicine) {
