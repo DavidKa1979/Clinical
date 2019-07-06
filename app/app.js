@@ -27,5 +27,8 @@ app.config(function ($routeProvider) {
             // controller: "aboutCtrl"     
         }).when("/contact", {
             templateUrl: "app/contact/contact.html", 
+        }).when("/table", {
+            templateUrl: "app/table/table.html", 
+            controller: "tableCtrl"
         });
 })
