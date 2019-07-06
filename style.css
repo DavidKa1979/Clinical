@@ -1,6 +1,8 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body {
+.body {
   font-family: sans-serif;
   text-align: right;
   direction: rtl;
@@ -12,20 +14,31 @@ body {
   margin-top: 50px;
 }
 
-.card.recipe > img {
+.card.recipe>img {
   height: 300px;
   object-fit: cover;
 }
 
 .bg-cover {
   background-image: url('http://www.peponigruppe.com/wp-content/uploads/2014/08/shutterstock_92228908-compressed-825x340.jpg');
- /* Full height */
- height: 100%;
+  /* Full height */
+  height: 100%;
 
- /* Center and scale the image nicely */
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cover-about {
+  background-image: url('img/dummy/bg1.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Styles for wrapping the search box */
@@ -87,30 +100,82 @@ body {
   transition: transform 1s, opacity 1s;
 }
 
-.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+1) {
+  background: hsla(0, 100%, 50%, 0.8);
+}
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+.carousel__cell:nth-child(9n+2) {
+  background: hsla(40, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+3) {
+  background: hsla(80, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+4) {
+  background: hsla(120, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+5) {
+  background: hsla(160, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+6) {
+  background: hsla(200, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+7) {
+  background: hsla(240, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+8) {
+  background: hsla(280, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+0) {
+  background: hsla(320, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
 
 
 
 .carousel-options {
-  text-align:center;
+  text-align: center;
   position: relative;
   z-index: 2;
   background: hsla(0, 0%, 100%, 0.8);
@@ -120,3 +185,17 @@ body {
 .imgmedice {
   width: 230px;
 }
+
+.map-container-6{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-6 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }

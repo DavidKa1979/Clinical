@@ -22,5 +22,10 @@ app.config(function ($routeProvider) {
         }).when("/diagnosis", {
             templateUrl: "app/diagnosis/diagnosis.html",
             controller: "diagnosisCtrl"
+        }).when("/about", {
+            templateUrl: "app/about/about.html",
+            // controller: "aboutCtrl"     
+        }).when("/contact", {
+            templateUrl: "app/contact/contact.html", 
         });
 })
