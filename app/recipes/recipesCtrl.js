@@ -33,5 +33,4 @@ app.controller("recipesCtrl", function($scope, userSrv, $location, recipeSrv, $u
             console.log("user canceled new recipe");
         })
     }
-
 })

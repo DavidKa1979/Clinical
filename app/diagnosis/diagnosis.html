@@ -1,62 +1,73 @@
 <div>
-<medical-navbar></medical-navbar>
-<div class="scene">
-    <div class="carousel">
-        <div class="carousel__cell" ng-click="bodySelect" id="head-man"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/head-man.jpg"
-                alt="head-man"></div>
-        <div class="carousel__cell" ng-click="bodySelect" id="eyes-man"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/eyes-man.jpg"
-                alt="eyes-man"></div>
-        <div class="carousel__cell" ng-click="bodySelect" id="nose-man"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/nose-man.jpg"
-                alt="nose-man"></div>
-        <div class="carousel__cell"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/back-man.jpg"
-                alt="back-man"></div>
-        <div class="carousel__cell"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/hands-man.jpg"
-                alt="hands-man"></div>
-        <div class="carousel__cell"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/stomach-man.jpg"
-                alt="stomach-man"></div>
-        <div class="carousel__cell"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/feet-man.jpg"
-                alt="feet-man"></div>
-        <div class="carousel__cell"><img
-                src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/man.jpg"
-                alt="man"></div>
-        <div class="carousel__cell">9</div>
-        <div class="carousel__cell">10</div>
-        <div class="carousel__cell">11</div>
-        <div class="carousel__cell">12</div>
-        <div class="carousel__cell">13</div>
-        <div class="carousel__cell">14</div>
-        <div class="carousel__cell">15</div>
+    <section class="section pb-0 body">
+        <div class="jumbotron bg-cover-diagnosis mb-0 ">
+            <h1 class="display-3 text-center text-pop-up-bottom">דיאגנוסטיפול</h1>
+            <p class="lead text-center">Master Your Health.</p>
+            <div class="row justify-content-center">
+                <div class="form-group has-search text-justify text-left">
+                </div>
+            </div>
+            <hr class="my-2">
+        </div>
+    </section>
+    <medical-navbar></medical-navbar>
+    <div class="scene">
+        <div class="carousel">
+            <div class="carousel__cell" ng-click="bodySelect" id="head-man"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/head-man.jpg"
+                    alt="head-man"></div>
+            <div class="carousel__cell" ng-click="bodySelect" id="eyes-man"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/eyes-man.jpg"
+                    alt="eyes-man"></div>
+            <div class="carousel__cell" ng-click="bodySelect" id="nose-man"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/nose-man.jpg"
+                    alt="nose-man"></div>
+            <div class="carousel__cell"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/back-man.jpg"
+                    alt="back-man"></div>
+            <div class="carousel__cell"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/hands-man.jpg"
+                    alt="hands-man"></div>
+            <div class="carousel__cell"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/stomach-man.jpg"
+                    alt="stomach-man"></div>
+            <div class="carousel__cell"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/feet-man.jpg"
+                    alt="feet-man"></div>
+            <div class="carousel__cell"><img
+                    src="https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/man.jpg"
+                    alt="man"></div>
+            <div class="carousel__cell">9</div>
+            <div class="carousel__cell">10</div>
+            <div class="carousel__cell">11</div>
+            <div class="carousel__cell">12</div>
+            <div class="carousel__cell">13</div>
+            <div class="carousel__cell">14</div>
+            <div class="carousel__cell">15</div>
+        </div>
+        <div class="carousel-options">
+            <p>
+                <label>
+                    Cells
+                    <input class="cells-range" type="range" min="3" max="15" value="8" />
+                </label>
+            </p>
+            <p>
+                <button class="previous-button">Previous</button>
+                <button class="next-button">Next</button>
+            </p>
+            <p>
+                Orientation:
+                <label>
+                    <input type="radio" name="orientation" value="horizontal" checked />
+                    horizontal
+                </label>
+                <label>
+                    <input type="radio" name="orientation" value="vertical" />
+                    vertical
+                </label>
+            </p>
+        </div>
     </div>
-    <div class="carousel-options">
-        <p>
-            <label>
-                Cells
-                <input class="cells-range" type="range" min="3" max="15" value="8" />
-            </label>
-        </p>
-        <p>
-            <button class="previous-button">Previous</button>
-            <button class="next-button">Next</button>
-        </p>
-        <p>
-            Orientation:
-            <label>
-                <input type="radio" name="orientation" value="horizontal" checked />
-                horizontal
-            </label>
-            <label>
-                <input type="radio" name="orientation" value="vertical" />
-                vertical
-            </label>
-        </p>
-    </div>
-</div>
-<script src="diagnosisCtrl.js"></script>
+    <script src="diagnosisCtrl.js"></script>
 </div>

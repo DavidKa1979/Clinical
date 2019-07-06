@@ -23,7 +23,6 @@
   background-image: url('http://www.peponigruppe.com/wp-content/uploads/2014/08/shutterstock_92228908-compressed-825x340.jpg');
   /* Full height */
   height: 100%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -40,6 +39,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.bg-cover-contact {
+  background-image: url('img/photo/6.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cover-diagnosis {
+  background-image: url('img/photo/5.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* Styles for wrapping the search box */
 

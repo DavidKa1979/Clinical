@@ -8,19 +8,20 @@
         <!-- ml auto is moving the items to the right -->
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
+                <a class="nav-link" href="#!/recipes" ng-show="isLoggedIn()">לוח בקרה</a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="#!/about" ng-hide="isLoggedIn()">אודות</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#!/diagnosis" ng-hide="isLoggedIn()">דיאגנוסטיפול</a>
+                <a class="nav-link" href="#!/diagnosis">דיאגנוסטיפול</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#!/medicine" ng-hide="isLoggedIn()">חיפוש תרופות</a>
+                <a class="nav-link" href="#!/medicine" ng-hide="isLoggedIn()">חיפוש תרופה</a>
             </li>
+
             <li class="nav-item active">
-                <a class="nav-link" href="#!/contact" ng-hide="isLoggedIn()">צור קשר</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#!/recipes" ng-show="isLoggedIn()">Patients Control</a>
+                <a class="nav-link" href="#!/contact">צור קשר</a>
             </li>
         </ul>
 
