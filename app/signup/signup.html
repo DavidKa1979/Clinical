@@ -8,19 +8,19 @@
             <!-- First name -->
             <input type="text" id="defaultRegisterFormFirstName" ng-model="fname" class="form-control" placeholder="First name">
         </div>
-        {{fname}}
+       
         <div class="col">
             <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+            <input type="text" id="defaultRegisterFormLastName" ng-model="lname" class="form-control" placeholder="Last name">
         </div>
     </div>
 
     <!-- E-mail -->
     <input type="email" id="defaultRegisterFormEmail" ng-model="email" class="form-control mb-4" placeholder="E-mail">
-{{email}}
+
     <!-- Password -->
     <input type="password" id="defaultRegisterFormPassword" ng-model="pwd" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    {{pwd}}
+   
     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
         At least 8 characters and 1 digit
     </small>

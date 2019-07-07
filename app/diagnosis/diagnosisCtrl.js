@@ -1,12 +1,12 @@
 app.controller("diagnosisCtrl", function ($scope, $http){
-function Body(image) {
-  this.image = image;
+function Body(cells) {
+  this.cells = cells;
 };
 
 $scope.bodes = [];
 $http.get("app/diagnosis/body.json").then(function(res){
-  for (var i = 0; i < res.data.length-1; i++) {
-    var body = new Body (res.data[i].image);
+  for (selectedIndex = 0; selectedIndex < res.data.length; selectedIndex++) {
+    var body = new Body (res.data[selectedIndex].cells);
     $scope.bodes.push(body);
   }
 }, function(err) {

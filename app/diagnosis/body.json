@@ -1,26 +1,26 @@
 [
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/head-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/head-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/eyes-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/eyes-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/nose-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/nose-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/back-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/back-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/hands-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/hands-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/stomach-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/stomach-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/feet-man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/feet-man.jpg"
     },
     {
-        "image":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/man.jpg"
+        "cells":"https://sym.doctors.co.il/sites/sym.doctors.co.il/themes/symptomchecker/static/images/bodyparts/man.jpg"
     }
 ]
