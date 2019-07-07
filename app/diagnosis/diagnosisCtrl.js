@@ -1,4 +1,28 @@
-app.controller("diagnosisCtrl", function (){
+app.controller("diagnosisCtrl", function ($scope, $http){
+function Body(image) {
+  this.image = image;
+};
+
+$scope.bodes = [];
+$http.get("app/diagnosis/body.json").then(function(res){
+  for (var i = 0; i < res.data.length-1; i++) {
+    var body = new Body (res.data[i].image);
+    $scope.bodes.push(body);
+  }
+}, function(err) {
+  console.error(err);
+})
+
+$scope.activeCard=null;
+  $scope.clickCard = function(body) {
+    if ($scope.activeCard === body) {
+      $scope.activeCard=null;
+    } else {
+    $scope.activeCard = body
+  }
+}
+
+
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
 var cellCount; // cellCount set from cells-range input value
