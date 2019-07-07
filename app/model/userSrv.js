@@ -7,12 +7,36 @@ app.factory("userSrv", function ($q) {
         this.fname = parseUser.get("fname");
         this.lname = parseUser.get("lname");
         this.email = parseUser.get("email");
+        this.pwd = parseUser.get("pwd");
     }
 
 
     function isLoggedIn() {
         return activeUser ? true : false;
     }
+
+    // signup
+
+    function signUp(fname, email, pwd) {
+        var async = $q.defer();
+        const user = new Parse.User()
+        user.set('username', fname);
+        user.set('email', email);
+        user.set('password', pwd);
+
+        user.signUp().then(function (user) {
+            console.log('User signed up', user);
+            activeUser = new User(user);
+            async.resolve(activeUser);
+        }).catch(error => {
+            console.error('Error while signing up user', error);
+            async.reject(arror);
+        });
+        return async.promise;
+
+    }
+
+    // signup
 
     // login will check if the user and password exists. If so it will update the active user 
     // variable and will return it
@@ -35,6 +59,8 @@ app.factory("userSrv", function ($q) {
         return async.promise;
     }
 
+
+
     function logout() {
         activeUser = null;
     }
@@ -47,6 +73,7 @@ app.factory("userSrv", function ($q) {
         isLoggedIn: isLoggedIn,
         login: login,
         logout: logout,
+        signUp: signUp,
         getActiveUser: getActiveUser
     }
 

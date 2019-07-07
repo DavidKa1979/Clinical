@@ -1,5 +1,3 @@
-
-
 app.controller("loginCtrl", function($scope, $location, userSrv, $log /*,$rootScope*/ ) {
 
     $scope.invalidLogin = false;
