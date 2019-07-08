@@ -1,27 +1,26 @@
 app.controller("diagnosisCtrl", function ($scope, $http){
-function Body(cells) {
-  this.cells = cells;
-};
-
-$scope.bodes = [];
-$http.get("app/diagnosis/body.json").then(function(res){
-  for (selectedIndex = 0; selectedIndex < res.data.length; selectedIndex++) {
-    var body = new Body (res.data[selectedIndex].cells);
-    $scope.bodes.push(body);
+  function Body(image) {
+    this.image = image;
+  };
+  
+  $scope.bodes = [];
+  $http.get("app/diagnosis/body.json").then(function(res){
+    for (var selectedIndex = 0; selectedIndex < res.data.length; selectedIndex++) {
+      var body = new Body (res.data[selectedIndex].image);
+      $scope.bodes.push(body);
+    }
+  }, function(err) {
+    console.error(err);
+  })
+  
+  $scope.activeCard=null;
+    $scope.clickCard = function(body) {
+      if ($scope.activeCard === body) {
+        $scope.activeCard=null;
+      } else {
+      $scope.activeCard = body
+    }
   }
-}, function(err) {
-  console.error(err);
-})
-
-$scope.activeCard=null;
-  $scope.clickCard = function(body) {
-    if ($scope.activeCard === body) {
-      $scope.activeCard=null;
-    } else {
-    $scope.activeCard = body
-  }
-}
-
 
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
